@@ -1,0 +1,47 @@
+﻿@model List<ProyectoCrud.Models.Contacto>
+
+@{
+    ViewBag.Title = "Inicio";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row mb-4" style="margin-top:30px">
+    <div class="col-sm-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-dark text-light">
+                <h4>Lista de Contacto</h4>
+            </div>
+            <div class="card-body">
+                <a class="btn btn-success mb-3" href="@Url.Action("Registrar", "Contacto")">Crear Nuevo</a>
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                        <thead class="bg-secondary text-light">
+                            <tr>
+                                <th scope="col">Nombres</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">Teléfono</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col" style="width:150px"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (ProyectoCrud.Models.Contacto item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Nombres</td>
+                                    <td>@item.Apellidos</td>
+                                    <td>@item.Telefono</td>
+                                    <td>@item.Correo</td>
+                                    <td>
+                                        <a class="btn btn-info btn-sm me-2" href="@Url.Action("Editar", "Contacto", new { idcontacto = item.IdContacto })">Editar</a>
+                                        <a class="btn btn-danger btn-sm" href="@Url.Action("Eliminar", "Contacto", new { idcontacto = item.IdContacto })">Eliminar</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

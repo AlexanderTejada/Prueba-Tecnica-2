@@ -1,0 +1,87 @@
+﻿# Build results
+bin/
+obj/
+build/
+bld/
+[Bb]in
+[Oo]bj
+
+# Visual Studio cache/options directory
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider/JetBrains
+.idea/
+*.iml
+out/
+
+# Mac
+*.DS_Store
+*.DS_Store?
+
+# NuGet Packages
+# If you're using the 'packages' folder for some reason (older style)
+packages/
+# But keep a README.md or similar if needed:
+!packages/README.md
+
+# NuGet package source
+*.nupkg
+*.snupkg
+
+# Logs and Diagnostic files
+*.log
+*.tlog
+
+# Publish/Deploy artifacts
+PublishProfiles/
+*.Publish.xml
+*.pfx
+*.publishsettings
+
+# Respaldo de DB y archivos
+*.mdf
+*.ldf
+*.bak
+*.sql
+
+# Auto-generated content (por si usas TT files, etc.)
+Generated_Code/
+*.designer.cs
+
+# Visual Studio 2019/2022 cache (archivos de IntelliTrace, etc.)
+*.iTrace
+*.itrace
+*.vsp
+*.vspx
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+*_Resharper.*
+
+# SonarQube
+.sonar/
+sonarqube-out/
+
+# Otros temporales
+*.cache
+*.pidb
+*.swp
+*.class
+*.tmp
+*.temp
+*.pid
+
+# Empaquetado Web (si usas Web Deploy, etc.)
+*.publishproj
+
+# Documentación en PDF u otros
+*.pdf
+
+# Configs locales que no deseas exponer
+appsettings.*.local.json
